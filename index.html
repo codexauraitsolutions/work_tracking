@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SiteTrack — Work Orders, Site Progress &amp; RA Bills</title>
+<meta name="description" content="Construction work order, daily site progress and automatic RA billing app — clickable prototype with Admin, Site Supervisor and Client roles.">
+<meta name="theme-color" content="#13203B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SiteTrack">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="page">
+ <aside class="guide"><div class="brandline"><div class="logo"><i data-lucide="hard-hat" class="ic"></i></div>SiteTrack · clickable prototype</div><div id="guidePanel"></div></aside>
+ <div class="device"><div class="app" id="app">
+  <div id="hdr"></div>
+  <main id="scroll" class="scroll"></main>
+  <div id="footer" class="footer" hidden></div>
+  <nav id="tabs" class="tabs" hidden></nav>
+  <div id="overlay"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+ </div></div>
+</div>
+<script src="/vendor/lucide.min.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/screens.js"></script>
+<script src="/js/actions.js"></script>
+</body>
+</html>
