@@ -2,9 +2,8 @@
   "name": "sitetrack-prototype",
   "version": "1.0.0",
   "private": true,
-  "description": "SiteTrack clickable prototype — static site for Vercel",
+  "description": "SiteTrack clickable prototype — static site for Vercel (no build step)",
   "scripts": {
-    "dev": "npx --yes serve . -l 3000",
-    "build": "echo \"Static site — nothing to build\""
+    "dev": "npx --yes serve . -l 3000"
   }
 }

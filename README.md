@@ -23,11 +23,11 @@ vercel --prod   # production
 
 ## Run locally
 ```bash
-npx serve .     # http://localhost:3000
+npm run dev     # http://localhost:3000
 ```
 
-> Keep this repo **without a `package.json`**. If one is added with a `build` script,
-> Vercel expects a `public` output folder and the deploy fails.
+> Do **not** add a `build` script to `package.json`. With a build script, Vercel looks for
+> a `public` output folder and the deploy fails. Without one, it serves the files as they are.
 
 ## Files
 | Path | What it is |
