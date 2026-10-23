@@ -10,7 +10,7 @@ Plain HTML, CSS and JavaScript — no framework, no build step.
 **Option A — GitHub (recommended)**
 1. Create a new GitHub repository and push this folder to it.
 2. On vercel.com → **Add New… → Project** → import the repository.
-3. Framework Preset: **Other**. Leave Build Command and Output Directory empty.
+3. Framework Preset: **Other**. Leave Build Command, Output Directory and Install Command empty (no overrides).
 4. Click **Deploy**.
 
 **Option B — Vercel CLI**
@@ -23,8 +23,11 @@ vercel --prod   # production
 
 ## Run locally
 ```bash
-npm run dev     # http://localhost:3000
+npx serve .     # http://localhost:3000
 ```
+
+> Keep this repo **without a `package.json`**. If one is added with a `build` script,
+> Vercel expects a `public` output folder and the deploy fails.
 
 ## Files
 | Path | What it is |
